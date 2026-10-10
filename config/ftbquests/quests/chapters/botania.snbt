@@ -1,0 +1,251 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "botania"
+	group: "669752626E353019"
+	icon: {
+		Count: 1
+		id: "botania:lexicon"
+		tag: {
+			"botania:elven_unlock": 1b
+		}
+	}
+	id: "2EDE414D305CC108"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: [
+				"73D5E821D1996037"
+				"7886AA99B7567BCA"
+			]
+			icon: "botania:pure_daisy"
+			id: "656EB11983899BA5"
+			subtitle: "Make more"
+			tasks: [
+				{
+					id: "09C69E71C87D9070"
+					item: "botania:pure_daisy"
+					type: "item"
+				}
+				{
+					id: "0A925B1234077505"
+					item: "botania:apothecary_default"
+					type: "item"
+				}
+			]
+			title: "Making a pure daisy"
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			id: "7886AA99B7567BCA"
+			tasks: [{
+				advancement: "botania:main/flower_pickup"
+				criterion: ""
+				id: "4D3D432003EFBC85"
+				title: "Get some mystical flowers"
+				type: "advancement"
+			}]
+			x: -3.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["7886AA99B7567BCA"]
+			id: "6D74B164AC015893"
+			rewards: [{
+				count: 16
+				id: "0E9F26A9B7FFA227"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
+			subtitle: "Not really"
+			tasks: [
+				{
+					id: "2C48DBE62F2D8154"
+					item: "botania:white_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "76582D57818F8FFB"
+					item: "botania:light_gray_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "484B00D9F042BE8A"
+					item: "botania:gray_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "68DA3A90B817DC1F"
+					item: "botania:black_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "21B1D8BC7758B628"
+					item: "botania:brown_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "686E1324EE3AC2C6"
+					item: "botania:red_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "703D72382EBB5A3B"
+					item: "botania:orange_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "2D0A738C0036F829"
+					item: "botania:yellow_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "5AC26A9A2972F6E7"
+					item: "botania:lime_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "08E29A634262B0B9"
+					item: "botania:green_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "68173F07A5325BDB"
+					item: "botania:cyan_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "737814771300443E"
+					item: "botania:light_blue_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "2AC5301F3804973E"
+					item: "botania:blue_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "37B4E60ACB740E06"
+					item: "botania:purple_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "060944C08D3C6FFA"
+					item: "botania:magenta_mystical_flower"
+					type: "item"
+				}
+				{
+					id: "0B845622E5BC3250"
+					item: "botania:pink_mystical_flower"
+					type: "item"
+				}
+			]
+			title: "You need every single flower"
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["656EB11983899BA5"]
+			description: ["I recommend making several pure daisies, a minimum of 4, and making way more livingrock and livingwood"]
+			id: "2AD5D2770CC4F49E"
+			subtitle: "Put them around the pure daisy and wait a while"
+			tasks: [
+				{
+					count: 32L
+					id: "3617308B8FC8194A"
+					item: { Count: 32, id: "botania:livingrock" }
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "5C456D8CE1D10871"
+					item: { Count: 32, id: "botania:livingwood_log" }
+					type: "item"
+				}
+			]
+			title: "Basic Resources"
+			x: 1.0d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2AD5D2770CC4F49E"]
+			id: "6D6DEA13C9A29078"
+			tasks: [{
+				id: "4934CFE588606C5B"
+				item: "botania:mana_pool"
+				type: "item"
+			}]
+			title: "Storing mana"
+			x: 3.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"2AD5D2770CC4F49E"
+				"5804A5F1470AC624"
+			]
+			id: "73A9C8702CF728BD"
+			tasks: [{
+				id: "1668BBD32785D0BA"
+				item: "botania:mana_spreader"
+				type: "item"
+			}]
+			title: "Moving mana"
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["656EB11983899BA5"]
+			id: "5804A5F1470AC624"
+			tasks: [
+				{
+					id: "312A37E0367B33E2"
+					item: "botania:hydroangeas"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "180D0600DD436126"
+					item: "botania:endoflame"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Basic Mana Generation"
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5804A5F1470AC624"]
+			description: ["The Endoflame picks any burnable item (the ones you can use in a furnace to cook other items) in a 3 block radius from itself (making a 7x7x7 cube) and transforms it into mana, it will only pickup an fuel if its not generating mana"]
+			id: "385D294415A75108"
+			subtitle: "Checkout the Lexica"
+			tasks: [
+				{
+					id: "054708DDFF83A58E"
+					item: "botania:endoflame"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "2E6B5C638AE9F3F5"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(minecraft:coals)"
+						}
+					}
+					title: "Any #minecraft:coals"
+					type: "item"
+				}
+			]
+			title: "Simple endoflame semi-automation"
+			x: 1.0d
+			y: 2.5d
+		}
+	]
+	title: "Botania"
+}

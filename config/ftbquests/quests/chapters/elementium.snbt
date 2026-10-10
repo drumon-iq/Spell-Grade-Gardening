@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "elementium"
+	group: "3DD7C365C5351B3F"
+	icon: "botania:elementium_ingot"
+	id: "6EA7B02FC4936660"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Elementium"
+}

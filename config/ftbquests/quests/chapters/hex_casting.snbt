@@ -1,0 +1,18 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "hex_casting"
+	group: "669752626E353019"
+	icon: {
+		Count: 1
+		id: "patchouli:guide_book"
+		tag: {
+			"patchouli:book": "hexcasting:thehexbook"
+		}
+	}
+	id: "6D8869333DE867DE"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Hex Casting"
+}

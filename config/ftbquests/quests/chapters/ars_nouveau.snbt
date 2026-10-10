@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "ars_nouveau"
+	group: "669752626E353019"
+	icon: "ars_nouveau:worn_notebook"
+	id: "7E06C5F6352A2E08"
+	order_index: 2
+	quest_links: [ ]
+	quests: [ ]
+	title: "Ars Nouveau"
+}
