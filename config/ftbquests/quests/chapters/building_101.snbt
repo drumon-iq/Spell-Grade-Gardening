@@ -1,0 +1,228 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "building_101"
+	group: "25D270800AE94DEF"
+	icon: "skinnedlanterns:tiny_potato_lantern_block"
+	id: "51F5C2A42317E708"
+	images: [{
+		height: 7.0d
+		image: "architects_palette:block/chiseled_tuff"
+		rotation: 0.0d
+		width: 7.0d
+		x: 0.5d
+		y: 2.0d
+	}]
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["Press the M key to open it, may be in conflict with ftb maps"]
+			id: "28E59175F8A5A36B"
+			subtitle: "Very useful for mega builds"
+			tasks: [{
+				id: "4A58C956AFDAF9EF"
+				type: "checkmark"
+			}]
+			title: "Forgematica is installed!"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			id: "71067856DE77C0B4"
+			tasks: [{
+				id: "46A0DE47040E9703"
+				item: {
+					Count: 1
+					id: "rechiseled:chisel"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Rechiseled"
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			id: "0CF37924C9A8877C"
+			tasks: [
+				{
+					id: "438C0F1F9129ACA9"
+					item: "chipped:botanist_workbench"
+					type: "item"
+				}
+				{
+					id: "23564CF987CA0D1C"
+					item: "chipped:glassblower"
+					type: "item"
+				}
+				{
+					id: "2D01E91091D53F1D"
+					item: "chipped:carpenters_table"
+					type: "item"
+				}
+				{
+					id: "3D357EB93ABA9D54"
+					item: "chipped:loom_table"
+					type: "item"
+				}
+				{
+					id: "76CDA8BB295A8251"
+					item: "chipped:mason_table"
+					type: "item"
+				}
+				{
+					id: "0F06CC30891792BE"
+					item: "chipped:alchemy_bench"
+					type: "item"
+				}
+				{
+					id: "27F4DEEDE9DFE266"
+					item: "chipped:tinkering_table"
+					type: "item"
+				}
+			]
+			title: "Chipped"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			id: "48F66E3F56597828"
+			tasks: [{
+				id: "2CC6DE3D7671C671"
+				item: "clayworks:kiln"
+				type: "item"
+			}]
+			title: "Clayworks"
+			x: 2.5d
+			y: 4.0d
+		}
+		{
+			id: "51B5C59DB823226D"
+			subtitle: "Such many blocks"
+			tasks: [{
+				id: "59B243B8C5018433"
+				type: "checkmark"
+			}]
+			title: "Architet's Palette"
+			x: -1.5d
+			y: 2.0d
+		}
+		{
+			id: "73B0678542DA0124"
+			tasks: [{
+				id: "67C9958AD0497183"
+				item: "woodworks:sawmill"
+				type: "item"
+			}]
+			title: "WoodWorks"
+			x: 2.5d
+			y: 2.0d
+		}
+		{
+			id: "5B5A6264686ACA0D"
+			tasks: [{
+				id: "10FAA5C1A408FD03"
+				item: "sawmill:sawmill"
+				type: "item"
+			}]
+			title: "Universal Sawmill"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			id: "5BCDBA3C46BBDA48"
+			tasks: [{
+				id: "7BC6C1290F346572"
+				title: "Decorative blocks"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			id: "2346944DC9C4255A"
+			tasks: [{
+				id: "351D38E3C909ADED"
+				item: "buzzier_bees:honeycomb_bricks"
+				type: "item"
+			}]
+			title: "Buzzier bees"
+			x: 0.5d
+			y: 4.0d
+		}
+		{
+			id: "6FBCB88BB2ADBFA3"
+			subtitle: "More colors than the rainbow"
+			tasks: [{
+				id: "4118E45FF51071F3"
+				title: "Dyenamics and friends"
+				type: "checkmark"
+			}]
+			x: -1.5d
+			y: 4.0d
+		}
+		{
+			id: "5909DF5B7BACAA0D"
+			tasks: [{
+				id: "0029A602F7E41DDD"
+				title: "Chimes"
+				type: "checkmark"
+			}]
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			id: "609AE217A6131919"
+			subtitle: "Combine a bed and a flag"
+			tasks: [{
+				id: "3F90C1244ECD827B"
+				title: "Bedspreads"
+				type: "checkmark"
+			}]
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			id: "72CBFC0C1DC63258"
+			tasks: [{
+				id: "6ECC6AD837E28FC1"
+				title: "Supplementaries"
+				type: "checkmark"
+			}]
+			x: 8.5d
+			y: 2.0d
+		}
+		{
+			id: "5A7428C28C5BE252"
+			tasks: [{
+				id: "586895D2EB96B797"
+				title: "Skinned Laterns"
+				type: "checkmark"
+			}]
+			x: 10.5d
+			y: 0.0d
+		}
+		{
+			id: "2202EC94E5F7AE5A"
+			tasks: [{
+				id: "4B3803ADEC95ACF2"
+				title: "Amendments"
+				type: "checkmark"
+			}]
+			x: 10.5d
+			y: 2.0d
+		}
+		{
+			id: "4B80050C4DF830EA"
+			tasks: [{
+				id: "723502FC169968DF"
+				title: "Hand Crafted"
+				type: "checkmark"
+			}]
+			x: 8.5d
+			y: 4.0d
+		}
+	]
+	title: "Building 101"
+}

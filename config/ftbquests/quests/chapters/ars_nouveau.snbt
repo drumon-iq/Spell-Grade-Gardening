@@ -7,6 +7,251 @@
 	id: "7E06C5F6352A2E08"
 	order_index: 2
 	quest_links: [ ]
-	quests: [ ]
+	quests: [
+		{
+			dependencies: ["64A9A7982B493643"]
+			id: "340A36683404885B"
+			rewards: [{
+				id: "0687411290BFD890"
+				item: {
+					Count: 1
+					id: "ars_nouveau:dowsing_rod"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				consume_items: true
+				id: "71DDF01ADE674DB4"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			title: "Start Ars Nouveau"
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"340A36683404885B"
+				"7B9322398541B4D7"
+				"3ABF25926E89B5B8"
+			]
+			id: "47125158A87108D9"
+			rewards: [
+				{
+					id: "4E9B047C220F3DEA"
+					item: "ars_nouveau:blue_archwood_sapling"
+					type: "item"
+				}
+				{
+					id: "6CF3D6C5E863A0CD"
+					item: "ars_nouveau:red_archwood_sapling"
+					type: "item"
+				}
+				{
+					id: "306F651C109EC556"
+					item: "ars_nouveau:purple_archwood_sapling"
+					type: "item"
+				}
+				{
+					id: "7C9A7B19EFA41107"
+					item: "ars_nouveau:green_archwood_sapling"
+					type: "item"
+				}
+			]
+			shape: "diamond"
+			subtitle: "Still need sauce"
+			tasks: [{
+				id: "3339BE37206442CC"
+				item: "ars_nouveau:enchanting_apparatus"
+				type: "item"
+			}]
+			title: "To make your book"
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: [
+				"46B87562C56B636A"
+				"61490409954B8B2D"
+				"09CFABE5465AA082"
+				"5686205D78C3D49C"
+				"51067C58B80459CD"
+			]
+			dependency_requirement: "one_completed"
+			icon: "arsdelight:source_berry_tea"
+			id: "3ABF25926E89B5B8"
+			rewards: [{
+				id: "7CB4E848833B4276"
+				item: "arsdelight:source_berry_cookie"
+				type: "item"
+			}]
+			subtitle: "Still need the runic altar"
+			title: "Source Generation"
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7B9322398541B4D7"]
+			id: "46B87562C56B636A"
+			rewards: [{
+				id: "0D95E874F8439EDA"
+				item: "minecraft:wheat_seeds"
+				type: "item"
+			}]
+			subtitle: "Farmer companion"
+			tasks: [{
+				id: "45D80A0E6E958E3A"
+				item: "ars_nouveau:agronomic_sourcelink"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7B9322398541B4D7"]
+			description: ["This should interest you, if it doesn't, check out the thermalily in the Lexica Botania"]
+			id: "51067C58B80459CD"
+			rewards: [{
+				id: "7F9AF1F44853FC1E"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			subtitle: "Wait it makes lava? hOLd on"
+			tasks: [{
+				id: "49A8B829F0DE2D68"
+				item: "ars_nouveau:volcanic_sourcelink"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7B9322398541B4D7"]
+			id: "61490409954B8B2D"
+			rewards: [{
+				id: "347FFA065839C1E5"
+				item: {
+					Count: 1
+					id: "minecraft:potion"
+					tag: {
+						Potion: "minecraft:mundane"
+					}
+				}
+				type: "item"
+			}]
+			subtitle: "Heavy drinker"
+			tasks: [{
+				id: "30A2D6F3B70771AA"
+				item: "ars_nouveau:alchemical_sourcelink"
+				type: "item"
+			}]
+			x: -3.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7B9322398541B4D7"]
+			id: "5686205D78C3D49C"
+			rewards: [{
+				id: "213E8593C7551172"
+				item: "minecraft:wheat"
+				type: "item"
+			}]
+			subtitle: "Moo"
+			tasks: [{
+				id: "7BB0351E2F095D01"
+				item: "ars_nouveau:vitalic_sourcelink"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["7B9322398541B4D7"]
+			id: "09CFABE5465AA082"
+			rewards: [{
+				id: "4490756896B7EBB1"
+				item: "minecraft:bread"
+				type: "item"
+			}]
+			subtitle: "Because bread tastes better than key"
+			tasks: [{
+				id: "696527E03CD057E2"
+				item: "ars_nouveau:mycelial_sourcelink"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["47125158A87108D9"]
+			id: "77ACD3309626DD52"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "17CB1B8F7653B91E"
+				item: "ars_nouveau:novice_spell_book"
+				type: "item"
+			}]
+			title: "Novice Spell Slinger"
+			x: 0.75d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"77ACD3309626DD52"
+				"207A4039A43D3643"
+				"160702ED6F9A45B1"
+			]
+			icon: "ars_nouveau:apprentice_spell_book"
+			id: "140BAEE60B32FC65"
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "7BA8F52C6A05EDEC"
+				item: "ars_nouveau:apprentice_spell_book"
+				type: "item"
+			}]
+			title: "Apprentice Spell Slinger"
+			x: 0.75d
+			y: -5.25d
+		}
+		{
+			dependencies: ["140BAEE60B32FC65"]
+			icon: "ars_nouveau:archmage_spell_book"
+			id: "28D293FDA8708D98"
+			shape: "diamond"
+			size: 1.5d
+			subtitle: "Special Grade Sorcerer"
+			tasks: [{
+				id: "2FA3EEB58718F17F"
+				item: "ars_nouveau:archmage_spell_book"
+				type: "item"
+			}]
+			title: "Veteran Spell Slinger"
+			x: 0.75d
+			y: -7.5d
+		}
+		{
+			dependencies: [
+				"340A36683404885B"
+				"77ACD3309626DD52"
+			]
+			id: "7251CC1380AD60FC"
+			subtitle: "It pulls items from nearby chests"
+			tasks: [{
+				id: "6C7B58196984DBC6"
+				item: "ars_nouveau:scribes_table"
+				type: "item"
+			}]
+			title: "More Glyphs"
+			x: 3.0d
+			y: -1.5d
+		}
+	]
 	title: "Ars Nouveau"
 }

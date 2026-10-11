@@ -293,7 +293,7 @@
 		}
 		{
 			dependencies: ["78CACD6FA759DBB1"]
-			description: ["You might have some trouble find an amethyst geode in the vanilla way, fret not, Ars Nouveau is here to help, craft an _ and use it, it will show the location of budding amethyst blocks like an x-ray"]
+			description: ["You might have some trouble find an amethyst geode in the vanilla way, fret not, Ars Nouveau is here to help, craft an dowsing rod and use it, it will show the location of budding amethyst blocks like an x-ray"]
 			icon: "minecraft:amethyst_shard"
 			id: "1DFF40B148B10254"
 			rewards: [{

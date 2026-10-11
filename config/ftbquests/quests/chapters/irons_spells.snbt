@@ -1,0 +1,12 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "irons_spells"
+	group: "0D0512E4FC4DE7D9"
+	icon: "irons_spellbooks:inscription_table"
+	id: "2F8490208F4977DC"
+	order_index: 1
+	quest_links: [ ]
+	quests: [ ]
+	title: "Iron's spells"
+}

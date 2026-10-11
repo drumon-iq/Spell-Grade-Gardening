@@ -7,16 +7,37 @@
 	id: "7F0BA5310DF27AEE"
 	order_index: 0
 	quest_links: [ ]
-	quests: [{
-		dependencies: ["78CACD6FA759DBB1"]
-		id: "20A150B7463ED01B"
-		tasks: [{
-			id: "118145B46B1D7692"
-			item: "minecraft:iron_ingot"
-			type: "item"
-		}]
-		x: -2.0d
-		y: 0.0d
-	}]
+	quests: [
+		{
+			dependencies: [
+				"78CACD6FA759DBB1"
+				"6F70F6BB9354D877"
+			]
+			icon: "botania:manasteel_block"
+			id: "20A150B7463ED01B"
+			title: " The Manasteel Tier"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["20A150B7463ED01B"]
+			icon: "ars_nouveau:worn_notebook"
+			id: "64A9A7982B493643"
+			rewards: [{
+				id: "663103CE8F9C4B5D"
+				item: "ars_nouveau:worn_notebook"
+				type: "item"
+			}]
+			subtitle: "Yes, the manasteel is magic and transforms to glittering gold here"
+			tasks: [{
+				id: "5BCE54B94842B3F9"
+				item: "ars_nouveau:imbuement_chamber"
+				type: "item"
+			}]
+			title: "Starting on Ars Nouveau"
+			x: -2.0d
+			y: -2.0d
+		}
+	]
 	title: "Manasteel"
 }

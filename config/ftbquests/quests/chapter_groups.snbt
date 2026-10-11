@@ -2,5 +2,9 @@
 	chapter_groups: [
 		{ id: "3DD7C365C5351B3F", title: "Progression" }
 		{ id: "669752626E353019", title: "Magic Mods" }
+		{ id: "0D0512E4FC4DE7D9", title: "Fight back" }
+		{ id: "25D270800AE94DEF", title: "Building" }
+		{ id: "02F258167C2785F7", title: "Automation and farms" }
+		{ id: "0DFB7E61B00CB80B", title: "Dimensions" }
 	]
 }

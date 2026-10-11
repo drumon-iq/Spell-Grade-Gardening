@@ -1,0 +1,172 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "guns"
+	group: "0D0512E4FC4DE7D9"
+	icon: {
+		Count: 1
+		id: "jeg:semi_auto_pistol"
+		tag: {
+			AmmoCount: 10
+			Damage: 0
+		}
+	}
+	id: "77E5807F780BCEBA"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7B9322398541B4D7"]
+			id: "4C0AB169636FB84E"
+			rewards: [{
+				id: "34F88EA11F921C48"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			tasks: [{
+				id: "3E58017F685D68C1"
+				item: "jeg:scrap_workbench"
+				type: "item"
+			}]
+			title: "Start on Just Enough Guns"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4C0AB169636FB84E"]
+			description: ["Yep, it's all runic altar recipes, gated by Botania ... who would've thought"]
+			id: "732BDF2E06E39ED5"
+			rewards: [{
+				auto: "enabled"
+				description: "Magic guns"
+				icon: "botania:runic_altar"
+				id: "059BEE1281A28923"
+				title: "Dead serious"
+				type: "toast"
+			}]
+			subtitle: "It can't be ... you monster"
+			tasks: [{
+				id: "11CD9CF540E1C693"
+				title: "you gotta be kidding"
+				type: "checkmark"
+			}]
+			title: "Why are there no recipes for the workbenchs?"
+			x: -2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4C0AB169636FB84E"]
+			id: "24C068C2B0C48FFD"
+			tasks: [{
+				id: "606038F6338244F5"
+				item: "jeg:pistol_ammo"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["06713E350CA514E2"]
+			id: "30AB1AC0E3349DFF"
+			tasks: [{
+				id: "6D8524E35DB4509D"
+				item: "jeg:rifle_ammo"
+				type: "item"
+			}]
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4C0AB169636FB84E"]
+			id: "3E39704E8191B3D4"
+			tasks: [{
+				id: "11F82DC5A929D48E"
+				item: "jeg:handmade_shell"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["06713E350CA514E2"]
+			id: "68562C34FA2F85E7"
+			tasks: [{
+				id: "03AE5D29E34E87E8"
+				item: "jeg:shotgun_shell"
+				type: "item"
+			}]
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4C0AB169636FB84E"]
+			id: "06713E350CA514E2"
+			tasks: [{
+				id: "26E31C5F482ECC40"
+				item: "jeg:gunmetal_workbench"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["06713E350CA514E2"]
+			id: "60CB7F4ED26AB09C"
+			tasks: [{
+				id: "4D0CF204048DF071"
+				item: "jeg:gunnite_workbench"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4C0AB169636FB84E"]
+			id: "53EC56AC3858D916"
+			subtitle: "Recommended for beginners"
+			tasks: [
+				{
+					id: "64C281C3B01F624A"
+					item: {
+						Count: 1
+						id: "jeg:revolver"
+						tag: {
+							AmmoCount: 8
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "6F2466B1249566E0"
+					item: {
+						Count: 1
+						id: "jeg:waterpipe_shotgun"
+						tag: {
+							AmmoCount: 1
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Good starting options"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["06713E350CA514E2"]
+			id: "3D7858FA1B698AAA"
+			tasks: [{
+				id: "09ADCAB086552311"
+				item: "jeg:ammo_box"
+				type: "item"
+			}]
+			x: 2.0d
+			y: 1.5d
+		}
+	]
+	title: "Guns"
+}
