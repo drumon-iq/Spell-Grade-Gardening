@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "underground"
-	group: "0DFB7E61B00CB80B"
+	group: "669752626E353019"
 	icon: "undergarden:catalyst"
 	id: "27534A83A193306F"
-	order_index: 2
+	order_index: 7
 	quest_links: [ ]
 	quests: [{
 		id: "1BF5925192F52BFD"

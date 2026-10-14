@@ -21,6 +21,21 @@
 			]
 			icon: "botania:pure_daisy"
 			id: "656EB11983899BA5"
+			rewards: [
+				{
+					auto: "enabled"
+					description: "Get Gardening now"
+					icon: "botania:dandelifeon"
+					id: "4892596B544AAB45"
+					title: "Spell grade flowers"
+					type: "toast"
+				}
+				{
+					id: "4814963A1D2362EC"
+					item: "botania:black_lotus"
+					type: "item"
+				}
+			]
 			shape: "diamond"
 			size: 2.0d
 			subtitle: "Make more"
@@ -237,11 +252,18 @@
 				"Remember hydroangeas are passive and will decay"
 			]
 			id: "5804A5F1470AC624"
-			rewards: [{
-				id: "60C9F43EE49685ED"
-				type: "xp_levels"
-				xp_levels: 1
-			}]
+			rewards: [
+				{
+					id: "60C9F43EE49685ED"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+				{
+					id: "7332080E4E7779C0"
+					item: "botania:black_lotus"
+					type: "item"
+				}
+			]
 			subtitle: "Water or fire?"
 			tasks: [
 				{
@@ -257,7 +279,7 @@
 					type: "item"
 				}
 			]
-			title: "Basic Mana Generation"
+			title: "Starter Mana Generation"
 			x: 1.0d
 			y: 1.5d
 		}
@@ -302,11 +324,18 @@
 			]
 			icon: "botania:manasteel_block"
 			id: "6F70F6BB9354D877"
-			rewards: [{
-				id: "169DAC9F763AA99C"
-				type: "xp"
-				xp: 500
-			}]
+			rewards: [
+				{
+					id: "169DAC9F763AA99C"
+					type: "xp"
+					xp: 500
+				}
+				{
+					id: "221B5584668A7F41"
+					item: "botania:blacker_lotus"
+					type: "item"
+				}
+			]
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "Warming up"
@@ -315,7 +344,7 @@
 				item: "botania:manasteel_block"
 				type: "item"
 			}]
-			title: "First tier of progression"
+			title: "Manasteel"
 			x: 5.0d
 			y: 1.0d
 		}
@@ -352,6 +381,11 @@
 		{
 			dependencies: ["0A5BA1283455863C"]
 			id: "7B9322398541B4D7"
+			rewards: [{
+				id: "7A22B69BA7C933EF"
+				item: "botania:mana_cookie"
+				type: "item"
+			}]
 			shape: "diamond"
 			size: 2.0d
 			subtitle: "Major milestone"
@@ -370,16 +404,67 @@
 				""
 				"&oBut what about Ars nouveau, why would I craft the tools?&r"
 				""
-				"Yeah you can make the novice spell book but you wont have enough mana to cast spells consistently yet so they are still useful."
+				"&lIt got nerfed&r"
 			]
 			id: "1A17BBD28559EFE3"
-			tasks: [{
-				id: "2F47942BB87CC1BF"
-				title: "Get some gear"
-				type: "checkmark"
-			}]
-			x: 3.5d
-			y: 4.0d
+			tasks: [
+				{
+					id: "2F47942BB87CC1BF"
+					title: "Get some gear"
+					type: "checkmark"
+				}
+				{
+					id: "4FCCA49458F06D37"
+					item: {
+						Count: 1
+						id: "botania:manasteel_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "5CB7F61988A621C2"
+					item: {
+						Count: 1
+						id: "botania:manasteel_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "7ACA79312318954D"
+					item: {
+						Count: 1
+						id: "botania:manasteel_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "0B98D081BD3DD13C"
+					item: {
+						Count: 1
+						id: "botania:manasteel_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Botania gear"
+			x: 4.0d
+			y: 4.5d
 		}
 		{
 			description: [
@@ -389,6 +474,11 @@
 			]
 			icon: "botania:lexicon"
 			id: "4809742B2F5E1E3F"
+			rewards: [{
+				id: "4B661A42D858A337"
+				item: "botania:black_lotus"
+				type: "item"
+			}]
 			subtitle: "please"
 			tasks: [{
 				id: "4D5AE025F6476720"
@@ -453,10 +543,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"6F70F6BB9354D877"
-				"73A9C8702CF728BD"
-			]
+			dependencies: ["1A17BBD28559EFE3"]
 			id: "4BEE2E24A176F86E"
 			subtitle: "Its pretty useful"
 			tasks: [{
@@ -605,6 +692,18 @@
 			]
 			icon: "botania:terra_plate"
 			id: "4533BEC06C3AD79D"
+			rewards: [
+				{
+					id: "236ED797900C6184"
+					item: "botania:black_lotus"
+					type: "item"
+				}
+				{
+					id: "171F585C0C6488ED"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			shape: "square"
 			subtitle: "It's so much coal"
 			tasks: [
@@ -647,16 +746,25 @@
 				"6F70F6BB9354D877"
 				"4533BEC06C3AD79D"
 			]
-			description: ["Just need 1 ingot, its totally doable with a couple stacks of coal/charcoal."]
+			description: [
+				"Just need 1 ingot for the elven gateway. Its totally doable with a couple stacks of coal/charcoal."
+				""
+				"Maybe consider making a second one for the vengeace pickaxe"
+			]
 			id: "668C97115C8AB50D"
+			rewards: [{
+				id: "6FFAF5F8A278F1F0"
+				item: "botania:black_lotus"
+				type: "item"
+			}]
 			shape: "square"
-			subtitle: "nope"
+			subtitle: "You will need more"
 			tasks: [{
 				id: "0BE1CC45882A5BA7"
 				item: "botania:terrasteel_ingot"
 				type: "item"
 			}]
-			title: "Third tier?"
+			title: "First terrasteel ingot"
 			x: 7.5d
 			y: 3.5d
 		}
@@ -664,6 +772,11 @@
 			dependencies: ["668C97115C8AB50D"]
 			icon: "botania:alfheim_portal"
 			id: "7A166A8EDE1489B4"
+			rewards: [{
+				id: "34DD5D38E8D409E3"
+				item: "botania:black_lotus"
+				type: "item"
+			}]
 			subtitle: "Nether first"
 			tasks: [
 				{
@@ -702,6 +815,18 @@
 			]
 			icon: "botania:elementium_block"
 			id: "207A4039A43D3643"
+			rewards: [
+				{
+					id: "6A4B7CDF77E719BF"
+					item: "botania:blacker_lotus"
+					type: "item"
+				}
+				{
+					id: "5FC614EF99FCF396"
+					type: "xp"
+					xp: 1000
+				}
+			]
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "Interdimensional trading"
@@ -710,14 +835,29 @@
 				item: "botania:elementium_block"
 				type: "item"
 			}]
-			title: "Second tier"
+			title: "Elementium"
 			x: 11.0d
 			y: 1.0d
 		}
 		{
-			dependencies: ["668C97115C8AB50D"]
+			dependencies: [
+				"668C97115C8AB50D"
+				"5377AD307C9CBC8D"
+			]
 			icon: "botania:terrasteel_block"
 			id: "160702ED6F9A45B1"
+			rewards: [
+				{
+					id: "69C3241D769E9926"
+					item: "botania:blacker_lotus"
+					type: "item"
+				}
+				{
+					id: "5056E90DF5ED443B"
+					type: "xp"
+					xp: 2000
+				}
+			]
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "Just get more bro"
@@ -726,7 +866,7 @@
 				item: "botania:terrasteel_block"
 				type: "item"
 			}]
-			title: "Third Tier"
+			title: "Terrasteel"
 			x: 14.0d
 			y: 1.0d
 		}
@@ -734,6 +874,18 @@
 			dependencies: ["160702ED6F9A45B1"]
 			icon: "botania:life_essence"
 			id: "1CE743ECA935695C"
+			rewards: [
+				{
+					id: "49623372DF26E434"
+					item: "botania:blacker_lotus"
+					type: "item"
+				}
+				{
+					id: "22D0E411A61EFFA5"
+					type: "xp"
+					xp: 4000
+				}
+			]
 			shape: "hexagon"
 			size: 2.0d
 			subtitle: "The fight is a bore"
@@ -751,9 +903,101 @@
 					type: "item"
 				}
 			]
-			title: "Fourth Tier"
+			title: "Gaia Spirit"
 			x: 17.0d
 			y: 1.0d
+		}
+		{
+			description: [
+				"You need a more substancial mana generation in order to make a whole block of terrasteel, take a look at mana generation."
+				""
+				"Or you could just grind ... it would be a terrible decision"
+			]
+			id: "5377AD307C9CBC8D"
+			rewards: [{
+				id: "308D646FEBD053FC"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			subtitle: "Check out mana farms"
+			tasks: [{
+				id: "038ADABE4ECBCE96"
+				type: "checkmark"
+			}]
+			title: "So much mana"
+			x: 14.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1A17BBD28559EFE3"]
+			description: ["By the way don't make the Evil Craft magnets, they can't be disabled by solegnolias and may break Botania automation"]
+			id: "44FDE5BD85F9EA2C"
+			subtitle: "Don't use Evil Craft for magnets"
+			tasks: [{
+				id: "73D19815F0A318FF"
+				item: "botania:magnet_ring"
+				type: "item"
+			}]
+			x: 2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["44FDE5BD85F9EA2C"]
+			id: "17BAB7CE06AF0C9F"
+			tasks: [{
+				id: "4873A2F1664CCF76"
+				item: "botania:magnet_ring_greater"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1A17BBD28559EFE3"]
+			id: "51BC7FC5EAC4307D"
+			tasks: [{
+				id: "309D77BC4449A95A"
+				item: "botania:mana_ring"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1A17BBD28559EFE3"]
+			id: "194997CA17DA9AB8"
+			tasks: [{
+				id: "63190A9F51C53E19"
+				item: "botania:crafting_halo"
+				type: "item"
+			}]
+			x: 5.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["73A9C8702CF728BD"]
+			description: ["When placing a flower, hold it in your offhand to stop the flower from connecting to any mana pool/spreader automatically"]
+			id: "689F10F6F598A145"
+			tasks: [{
+				id: "4CD247CCDCC5CD79"
+				item: "botania:obedience_stick"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1A17BBD28559EFE3"]
+			description: ["Also available in Evil Craft format"]
+			id: "503DCA918A3D0BCA"
+			subtitle: "Another backpack"
+			tasks: [{
+				id: "03EBB6595125078C"
+				item: "botania:ender_hand"
+				type: "item"
+			}]
+			x: 6.0d
+			y: 4.5d
 		}
 	]
 	title: "Botania"

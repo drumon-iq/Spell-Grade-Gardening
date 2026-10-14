@@ -2,10 +2,10 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "nether"
-	group: "0DFB7E61B00CB80B"
+	group: "669752626E353019"
 	icon: "minecraft:obsidian"
 	id: "72BC698359101F0C"
-	order_index: 0
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
@@ -102,7 +102,7 @@
 		{
 			dependencies: ["4CA46ED3A74A7F3F"]
 			id: "7864D5F06DCBCD2A"
-			subtitle: "I once again highly recommend to cheese it"
+			subtitle: "I highly recommend to cheese it"
 			tasks: [{
 				entity: "minecraft:wither"
 				id: "5207727CB4B8798C"
@@ -111,6 +111,69 @@
 			}]
 			x: 2.0d
 			y: -5.0d
+		}
+		{
+			dependencies: ["7864D5F06DCBCD2A"]
+			description: ["You will need a beacon for Botania late game"]
+			id: "7C3DB90E178A5262"
+			shape: "square"
+			size: 2.0d
+			subtitle: "Major milestone"
+			tasks: [{
+				id: "0E24FFBACEDD5A5C"
+				item: "minecraft:nether_star"
+				type: "item"
+			}]
+			title: "Nether Start"
+			x: 2.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["6CEF7E7FD668319C"]
+			id: "673EC4DDD8944658"
+			tasks: [{
+				id: "5E800AEF5F07D59D"
+				item: "minecraft:blaze_powder"
+				type: "item"
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["673EC4DDD8944658"]
+			description: ["Recommendation: use the explorer's compass to search for the stronghold"]
+			id: "1E9E68E21500CFDC"
+			subtitle: "Don't use them to look for the stronghold"
+			tasks: [{
+				id: "1539470980107344"
+				item: "minecraft:ender_eye"
+				type: "item"
+			}]
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["14CE75C4C0B4282C"]
+			id: "13EBBE7E5603E325"
+			tasks: [{
+				id: "77CC64741B599C73"
+				item: "malum:blazing_quartz"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["14CE75C4C0B4282C"]
+			id: "785BCE343E6EE490"
+			subtitle: "If you are really lacking gunpowder"
+			tasks: [{
+				id: "00161C3879D2066E"
+				item: "jeg:brimstone_crystal"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 3.0d
 		}
 	]
 	title: "Nether"

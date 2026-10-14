@@ -34,7 +34,11 @@
 			y: 0.0d
 		}
 		{
-			description: ["Find them in caves or in the nether, you can make some pretty neat trades with them, bring some ores, apples and coal"]
+			description: [
+				"Find them in caves or in the nether, you can make some pretty neat trades with them, bring some ores, apples and coal."
+				""
+				"Later on, when you have acess to more resources, try bring with you always diamond gear and enchanted books and ender dragon heads, they offer really great deals, like 1 diamond pickaxe + 1 efficiency 5 enchanted book for a efficienty 6 diamond pickaxe *(which can later be stripped in the purifier)"
+			]
 			id: "799FFD5E91DA36C5"
 			rewards: [{
 				id: "3E4C6CC66D9F412C"
@@ -42,10 +46,19 @@
 				xp_levels: 1
 			}]
 			subtitle: "Funny little guys"
-			tasks: [{
-				id: "5A67C20C389DA077"
-				type: "checkmark"
-			}]
+			tasks: [
+				{
+					id: "5A67C20C389DA077"
+					type: "checkmark"
+				}
+				{
+					id: "2DE5187F089C15C1"
+					observe_type: 5
+					timer: 0L
+					to_observe: "goblintraders:goblin_trader"
+					type: "observation"
+				}
+			]
 			title: "Goblin Traders"
 			x: 2.0d
 			y: 0.0d
@@ -169,6 +182,130 @@
 			x: 0.0d
 			y: 4.0d
 		}
+		{
+			id: "4C11752C6CDADFD4"
+			rewards: [{
+				id: "0097006092DB9C65"
+				type: "xp_levels"
+				xp_levels: 1
+			}]
+			tasks: [
+				{
+					id: "4DC21CBC533BB1B8"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(comforts:sleeping_bags)"
+						}
+					}
+					optional_task: true
+					title: "Any #comforts:sleeping_bags"
+					type: "item"
+				}
+				{
+					id: "2249283C93E1A2DA"
+					item: {
+						Count: 1
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "ftbfiltersystem:item_tag(upgrade_aquatic:bedrolls)"
+						}
+					}
+					optional_task: true
+					title: "Any #upgrade_aquatic:bedrolls"
+					type: "item"
+				}
+			]
+			title: "Sleeping far from home"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			description: ["You can find it in loot chests or just make a slime gateway and you'll have more than enough to get by in the beginning"]
+			icon: "minecraft:slime_ball"
+			id: "1ACB35C25E259E40"
+			tasks: [{
+				id: "311023E43C94F23C"
+				item: {
+					Count: 1
+					id: "gateways:gate_pearl"
+					tag: {
+						gateway: "gateways:basic/slime"
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "How do I get slimeballs early"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			description: [
+				"You have a few options for creative flight:"
+				""
+				"1. Botania, wearing the flugel tiara"
+				"2. Hex Casting, casting the Anchorite's or Wayfairer's hex"
+				"3. Ars Nouveau, with the Tablet of Flight ritual"
+			]
+			icon: {
+				Count: 1
+				id: "minecraft:elytra"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2925025251C4B4EA"
+			subtitle: "Above all"
+			tasks: [{
+				id: "4A406CCC2EA553D5"
+				type: "checkmark"
+			}]
+			title: "Creative flight?"
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2925025251C4B4EA"]
+			id: "5EF60AA1D1B94909"
+			tasks: [{
+				id: "0677FDE3918EB271"
+				item: "ars_nouveau:ritual_flight"
+				type: "item"
+			}]
+			x: 8.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2925025251C4B4EA"]
+			id: "5849ABF511065716"
+			tasks: [{
+				id: "7B1675E1514FAD8E"
+				title: "Hex casting"
+				type: "checkmark"
+			}]
+			x: 6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["2925025251C4B4EA"]
+			id: "48CB30FDC769A68E"
+			tasks: [{
+				id: "10B30E8B98553074"
+				item: {
+					Count: 1
+					id: "botania:flight_tiara"
+					tag: {
+						variant: 0
+					}
+				}
+				type: "item"
+			}]
+			x: 10.0d
+			y: 4.0d
+		}
 	]
-	title: "QoL and Miscelaneous"
+	title: "Tips and Tricks"
 }

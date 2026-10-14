@@ -41,6 +41,8 @@
 				"Killing mobs with a blood extractor in the inventory will fill it with blood, collect a minimum of 6 buckets worth of blood to make an blood infuser"
 				""
 				"Hint: you can right click with a blood extractor on the ground to place blood buckets"
+				""
+				"Hint: combine several blood extractors in a crafting table to increase their capacity, works with a dark tank as well"
 			]
 			icon: {
 				Count: 1
@@ -144,6 +146,18 @@
 		{
 			dependencies: ["0770D239FA639B4D"]
 			id: "0E8EEF3E58EE8BA1"
+			rewards: [
+				{
+					id: "345987527CDDA683"
+					item: "evilcraft:condensed_blood"
+					type: "item"
+				}
+				{
+					id: "50F2C2D5A26B63F5"
+					type: "xp_levels"
+					xp_levels: 1
+				}
+			]
 			shape: "square"
 			size: 1.5d
 			subtitle: "Make cheaper blood infusion cores"
@@ -165,7 +179,12 @@
 		{
 			dependencies: ["0770D239FA639B4D"]
 			id: "10FCA2E4CBD156C4"
-			subtitle: "You have manasteel you know"
+			rewards: [{
+				id: "33834D8B8A19FB49"
+				item: "evilcraft:condensed_blood"
+				type: "item"
+			}]
+			subtitle: "Better than mending"
 			tasks: [{
 				id: "3D146534CAF6103B"
 				item: {
@@ -274,12 +293,16 @@
 		}
 		{
 			dependencies: ["0E8EEF3E58EE8BA1"]
+			description: ["They generate blood passively on blood stains on the ground, its a good ideia to make an \"orchard\" of these trees, 5 blocks apart, to collect the blood every once in a while. It's free, after all."]
 			id: "51C457F43770EA8E"
 			rewards: [{
 				id: "03B2D858EC29AFD8"
 				item: "evilcraft:condensed_blood"
 				type: "item"
 			}]
+			shape: "square"
+			size: 1.2d
+			subtitle: "Vegan blood extraction"
 			tasks: [{
 				id: "7F954CC3F0E2ED92"
 				item: "evilcraft:undead_sapling"
@@ -291,6 +314,11 @@
 		{
 			dependencies: ["54D333A9B4F06799"]
 			id: "686AB754CAC2E849"
+			rewards: [{
+				id: "4DD3799AFE5BA7FD"
+				item: "evilcraft:condensed_blood"
+				type: "item"
+			}]
 			tasks: [
 				{
 					id: "332C7350337DFFF3"
@@ -342,7 +370,7 @@
 				}
 				type: "item"
 			}]
-			x: 1.0d
+			x: 0.5d
 			y: -6.0d
 		}
 		{
@@ -368,11 +396,18 @@
 		{
 			dependencies: ["0770D239FA639B4D"]
 			id: "2F4E88CF461FE498"
-			tasks: [{
-				id: "5994FB0B1E8051DB"
-				item: "evilcraft:sanguinary_environmental_accumulator"
-				type: "item"
-			}]
+			tasks: [
+				{
+					id: "5994FB0B1E8051DB"
+					item: "evilcraft:sanguinary_environmental_accumulator"
+					type: "item"
+				}
+				{
+					id: "0B4A7D530EAEBB0A"
+					structure: "evilcraft:dark_temple"
+					type: "structure"
+				}
+			]
 			x: -2.0d
 			y: -3.5d
 		}
@@ -406,6 +441,11 @@
 		{
 			dependencies: ["51C457F43770EA8E"]
 			id: "4DCEEDD90AF5980A"
+			rewards: [{
+				id: "7E9E9A7359E92338"
+				item: "botania:terrasteel_nugget"
+				type: "item"
+			}]
 			subtitle: "Hella nasty things Imma do"
 			tasks: [{
 				id: "6C870AF5AF1D3799"
@@ -429,7 +469,7 @@
 				type: "item"
 			}]
 			title: "Vengeance"
-			x: 1.5d
+			x: 0.0d
 			y: -7.5d
 		}
 		{
@@ -439,13 +479,18 @@
 				"17967A35D8C81560"
 			]
 			id: "7F8E64B913FB36E4"
+			rewards: [{
+				id: "613FC1D574E3316D"
+				item: "evilcraft:condensed_blood"
+				type: "item"
+			}]
 			tasks: [{
 				id: "28924D8792978F22"
 				item: "evilcraft:blook"
 				type: "item"
 			}]
-			x: 2.5d
-			y: -7.5d
+			x: 3.0d
+			y: -7.0d
 		}
 		{
 			dependencies: [
@@ -471,7 +516,7 @@
 			}
 			id: "4CC057B28A906658"
 			shape: "square"
-			size: 1.5d
+			size: 1.2d
 			subtitle: "Meta"
 			tasks: [{
 				id: "7AF9BFAB878B46B0"
@@ -488,8 +533,8 @@
 				type: "item"
 			}]
 			title: "Fortune 5 book"
-			x: 2.0d
-			y: -9.0d
+			x: 1.5d
+			y: -8.25d
 		}
 		{
 			dependencies: [
@@ -518,7 +563,7 @@
 					type: "item"
 				}
 			]
-			x: -5.0d
+			x: -4.0d
 			y: -6.0d
 		}
 		{
@@ -539,7 +584,7 @@
 				}
 				type: "item"
 			}]
-			x: -3.0d
+			x: -2.0d
 			y: -6.5d
 		}
 		{
@@ -585,8 +630,8 @@
 				type: "checkmark"
 			}]
 			title: "THE BOOK, READ IT"
-			x: 2.5d
-			y: 0.0d
+			x: 0.0d
+			y: 2.5d
 		}
 		{
 			dependencies: ["33A01D248D28248F"]
@@ -598,8 +643,86 @@
 				type: "item"
 			}]
 			title: "Spirit protection"
-			x: -4.0d
+			x: -4.5d
 			y: 0.0d
+		}
+		{
+			dependencies: [
+				"33A01D248D28248F"
+				"452E73245E3D9885"
+			]
+			description: ["With the ring and the burning gemstone making through the dungeon at early game can be easier, activate it, bring a pickaxe, a sword, some torches and some blocks and run away if you get too close to a monster and it notices you."]
+			icon: "royalvariations:royal_arrow"
+			id: "734C3B4CC0255997"
+			subtitle: "It was already easy"
+			tasks: [{
+				id: "48CA596C1976F6BA"
+				type: "checkmark"
+			}]
+			title: "Easy dungeons"
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["54D333A9B4F06799"]
+			description: ["Can be bound to a hotkey"]
+			id: "16F17285690A114F"
+			subtitle: "Better than Botania"
+			tasks: [
+				{
+					id: "6F7BAF6AE7A24055"
+					item: "evilcraft:exalted_crafter_wooden"
+					optional_task: true
+					type: "item"
+				}
+				{
+					id: "4C56B33476E5A7AF"
+					item: "evilcraft:exalted_crafter"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Crafting on the go"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2E3C3ECC87ABA063"]
+			id: "71D73C2E2688E4CE"
+			subtitle: "REVENGE"
+			tasks: [
+				{
+					id: "1BF75399F6CDBC89"
+					item: "evilcraft:piercing_vengeance_focus"
+					type: "item"
+				}
+				{
+					id: "49EA2A2C98E4314C"
+					item: "evilcraft:vengeance_essence"
+					optional_task: true
+					type: "item"
+				}
+			]
+			title: "Killing Spirits"
+			x: -5.0d
+			y: -7.0d
+		}
+		{
+			dependencies: [
+				"71D73C2E2688E4CE"
+				"7A50042205004D98"
+			]
+			id: "1A867740AB0E60DE"
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Late Game, finally"
+			tasks: [{
+				id: "4BCD7C4BF1B1B5BE"
+				item: "evilcraft:garmonbozia"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -10.0d
 		}
 	]
 	title: "Evil Craft"

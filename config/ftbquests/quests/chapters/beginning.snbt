@@ -42,11 +42,7 @@
 		}
 		{
 			dependencies: ["45526045F2926948"]
-			description: [
-				"Check the &nProgression&r chapter. There are 3 tiers, 1 for Manasteel, 1 for Terrasteel and 1 for Gaia Spirit Ingots"
-				""
-				"Don't treat the progression as the modpack's to-do list, it's just an explanation on how to unlock features. Instead, pick something you want/need and work backwards to see what you are lacking"
-			]
+			description: ["Don't treat the progression as the modpack's to-do list, it's just an explanation on how to unlock features. Instead, pick something you want/need and work backwards to see what you are lacking."]
 			hide_until_deps_complete: false
 			icon: {
 				Count: 1
@@ -98,10 +94,19 @@
 		{
 			dependencies: ["45526045F2926948"]
 			description: [
-				" There are some towers spread across the map, and one that generates pretty close to world spawns, some of them have dungeons underneath, I highly reccomend checking them out right at the beginning of a save, it contains some pretty good loot. "
+				" There are some towers spread across the map, and one that generates pretty close to world spawn, some of them have a maze like dungeons underneath, I highly reccomend checking them out right at the beginning of a save, it contains some pretty good loot."
+				""
+				" Check the Evil Craft chapter for some relevant gear."
 				""
 				" And don't break the spawners, they can be useful later on"
 			]
+			icon: {
+				Count: 1
+				id: "minecraft:stone_sword"
+				tag: {
+					Damage: 0
+				}
+			}
 			id: "77F04F914D15BF1B"
 			rewards: [{
 				count: 16
@@ -111,10 +116,11 @@
 			}]
 			subtitle: "I always cheese them"
 			tasks: [{
-				id: "7E587BCA62FA623E"
-				title: "Roguelike dungeons"
-				type: "checkmark"
+				id: "564CF1CB10DD9783"
+				structure: "dungeoncrawl:dungeon"
+				type: "structure"
 			}]
+			title: "Dungeon Crawling"
 			x: 0.5d
 			y: 2.0d
 		}
@@ -125,6 +131,7 @@
 				""
 				"By the way, a bunch of annoying features of Just Enough Guns got disabled, but you could also disable patrols if it's getting on your nerves"
 			]
+			icon: "jeg:rifle_ammo"
 			id: "26AE9D1F856483AC"
 			rewards: [{
 				id: "33349A1ACC442880"
@@ -143,19 +150,28 @@
 		{
 			dependencies: ["45526045F2926948"]
 			description: [
-				"Ars Nouveau is really strong, sometimes making it so farms made through Botania and Hex Casting are useless."
+				"It is a versatile and potent mod, within the first day is easy to get through a good chunk of the mod, and the ability to spam spells makes tools useless, guns useless, other magic useless, it's just that strong."
 				""
-				"Changes will be made in this regard to balance the modpack."
+				"So I took that away, natural regen got nuked, if you want passive mana regen craft the rings, amulet and armor, even the enchantment (Mana Regen) does nothing."
 				""
-				"It is still an awesome mod, and you should totally check out their inventory management option."
+				"... Or ... drink potions."
+				""
+				"The intention is to make it rather temporary and localized, a one time thing where you become semi-immortal with healing spells, dash, and a bullet hell of spell spamming."
+				""
+				"Later on, with EvilCraft, you can stop depending on potions."
 			]
+			icon: {
+				Count: 1
+				id: "ars_nouveau:wand"
+				tag: { }
+			}
 			id: "71DCA355BEC56E99"
 			rewards: [{
 				id: "2C9EC58868EA40FC"
 				type: "xp_levels"
 				xp_levels: 1
 			}]
-			subtitle: "And I'm trying to integrated it to this modpack"
+			subtitle: "Ars Nouveau got NERFED to hell"
 			tasks: [{
 				id: "3B92DBC9337A1205"
 				title: "Ars Nouveau is BUSTED"
@@ -369,6 +385,41 @@
 			title: "Starting Malum"
 			x: 7.5d
 			y: 1.0d
+		}
+		{
+			dependencies: [
+				"73D5E821D1996037"
+				"6F70F6BB9354D877"
+			]
+			icon: "ars_nouveau:novice_spell_book"
+			id: "723C1829B2AF657B"
+			rewards: [{
+				id: "53159502469E8F0D"
+				item: "ars_nouveau:worn_notebook"
+				type: "item"
+			}]
+			tasks: [{
+				id: "26D881FD51D096A6"
+				item: "ars_nouveau:imbuement_chamber"
+				type: "item"
+			}]
+			title: "Starting Ars Nouveau"
+			x: 6.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["45526045F2926948"]
+			description: ["Global gamerules is being used to turn off mob griefing and fire tick"]
+			icon: "minecraft:tnt"
+			id: "7E46870E35EDD963"
+			subtitle: "Fire tick as well"
+			tasks: [{
+				id: "1639E30F4CA45DD1"
+				type: "checkmark"
+			}]
+			title: "Mob Griefing is off"
+			x: -2.0d
+			y: -0.5d
 		}
 	]
 	title: "Welcome"
