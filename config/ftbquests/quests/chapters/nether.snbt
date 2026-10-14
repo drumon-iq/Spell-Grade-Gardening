@@ -114,7 +114,7 @@
 		}
 		{
 			dependencies: ["7864D5F06DCBCD2A"]
-			description: ["You will need a beacon for Botania late game"]
+			description: ["Necessary for late game for Botania and Ars Nouveau"]
 			id: "7C3DB90E178A5262"
 			shape: "square"
 			size: 2.0d

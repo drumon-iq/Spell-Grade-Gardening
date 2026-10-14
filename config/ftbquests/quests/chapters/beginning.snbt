@@ -156,7 +156,7 @@
 				""
 				"... Or ... drink potions."
 				""
-				"The intention is to make it rather temporary and localized, a one time thing where you become semi-immortal with healing spells, dash, and a bullet hell of spell spamming."
+				"This is to make Ars Nouveau usage rather temporary and localized, a one time thing where you become semi-immortal with healing spells, dash, and a bullet hell of spell spamming."
 				""
 				"Later on, with EvilCraft, you can stop depending on potions."
 			]
@@ -181,6 +181,12 @@
 			y: 1.5d
 		}
 		{
+			description: [
+				"There are many things to improve."
+				""
+				" - Integrate other dimensions to progression"
+				" - Integrate Malum to progression"
+			]
 			icon: "minecraft:stick"
 			id: "68B3FFFDAFE0D50C"
 			rewards: [{

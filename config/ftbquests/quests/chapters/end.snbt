@@ -114,8 +114,8 @@
 				}
 			]
 			title: "Elytra hunting"
-			x: 4.5d
-			y: 0.0d
+			x: 3.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["650E7FDD8860DE93"]
@@ -127,7 +127,7 @@
 				type: "item"
 			}]
 			x: 2.5d
-			y: 2.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["52EB3ECDC1112125"]
@@ -137,7 +137,7 @@
 				item: "minecraft:end_stone"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 1.5d
 			y: -2.5d
 		}
 		{
@@ -149,7 +149,7 @@
 				item: "botania:ender_air_bottle"
 				type: "item"
 			}]
-			x: 2.0d
+			x: 1.5d
 			y: -1.5d
 		}
 		{

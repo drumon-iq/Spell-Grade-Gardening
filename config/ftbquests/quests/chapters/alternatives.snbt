@@ -46,21 +46,35 @@
 				"Or"
 				" 3. Progress Evil Craft 'till Promice of Tenacity 3 and skip this step"
 			]
+			icon: {
+				Count: 1
+				id: "gateways:gate_pearl"
+				tag: {
+					gateway: "gateways:basic/blaze"
+				}
+			}
 			id: "08ECAA46B835445F"
 			subtitle: "Don't try snowballs and fire resistance"
-			tasks: [{
-				id: "196C95EE89AB1ACE"
-				item: {
-					Count: 1
-					id: "gateways:gate_pearl"
-					tag: {
-						gateway: "gateways:basic/blaze"
+			tasks: [
+				{
+					id: "196C95EE89AB1ACE"
+					item: {
+						Count: 1
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:basic/blaze"
+						}
 					}
+					match_nbt: true
+					optional_task: true
+					type: "item"
+					weak_nbt_match: true
 				}
-				match_nbt: true
-				type: "item"
-				weak_nbt_match: true
-			}]
+				{
+					id: "06F98A04540A7530"
+					type: "checkmark"
+				}
+			]
 			title: "Getting Blaze Rods"
 			x: -1.5d
 			y: -2.0d
@@ -68,21 +82,36 @@
 		{
 			dependencies: ["12916EE1AE02D174"]
 			description: ["Enderman will teleport if you try to shoot them, which is annoying, instead, go melee and use magic, make a soulscribe and enchant it, it has low durability but nothing mending and unbreaking doesn't fix"]
+			icon: {
+				Count: 1
+				id: "gateways:gate_pearl"
+				tag: {
+					gateway: "gateways:basic/enderman"
+				}
+			}
 			id: "1292DD719302794D"
 			subtitle: "No bullets allowed"
-			tasks: [{
-				id: "071B9A093202715C"
-				item: {
-					Count: 1
-					id: "gateways:gate_pearl"
-					tag: {
-						gateway: "gateways:basic/enderman"
+			tasks: [
+				{
+					id: "071B9A093202715C"
+					item: {
+						Count: 1
+						id: "gateways:gate_pearl"
+						tag: {
+							gateway: "gateways:basic/enderman"
+						}
 					}
+					match_nbt: true
+					optional_task: true
+					type: "item"
+					weak_nbt_match: true
 				}
-				match_nbt: true
-				type: "item"
-				weak_nbt_match: true
-			}]
+				{
+					id: "12B723BC61CDC608"
+					optional_task: true
+					type: "checkmark"
+				}
+			]
 			title: "Ender Pearl in bulk"
 			x: 1.5d
 			y: -2.0d

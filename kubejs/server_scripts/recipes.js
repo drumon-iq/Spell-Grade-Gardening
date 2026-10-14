@@ -2,7 +2,7 @@ ServerEvents.recipes(event => {
 // Goofy spell books recipe change
     event.remove({id: 'ars_nouveau:novice_spell_book'});
     event.remove({id: 'ars_nouveau:apprentice_spell_book_upgrade'});
-    event.remove({id: 'ars_nouveau:archmage_spell_book_upgrade'});
+    event.remove({output: 'ars_nouveau:archmage_spell_book'});
 
     event.recipes.ars_nouveau.enchanting_apparatus(
 	['botania:mana_bottle', 'ars_nouveau:source_gem', 'botania:manasteel_block', 'minecraft:feather'],
@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
     );
 
     event.recipes.ars_nouveau.enchanting_apparatus(
-	['minecraft:nether_star', 'ars_nouveau:wilden_tribute', 'botania:gaia_ingot', 'minecraft:totem_of_undying'],
+	['quark:dragon_scale', 'ars_nouveau:wilden_tribute', 'botania:gaia_ingot', 'ars_instrumentum:fake_wilden_tribute'],
 	'ars_nouveau:apprentice_spell_book',
 	'ars_nouveau:archmage_spell_book',
 	8000

@@ -31,8 +31,8 @@
 				type: "item"
 			}]
 			title: "Start Ars Nouveau"
-			x: 1.0d
-			y: 0.5d
+			x: 0.0d
+			y: 0.0d
 		}
 		{
 			dependencies: [
@@ -71,8 +71,8 @@
 				type: "item"
 			}]
 			title: "To make your book"
-			x: 1.0d
-			y: -1.5d
+			x: -2.7755575615628914E-17d
+			y: -2.0000000000000004d
 		}
 		{
 			dependencies: [
@@ -92,8 +92,8 @@
 			}]
 			subtitle: "Still need the runic altar"
 			title: "Source Generation"
-			x: -1.5d
-			y: -2.5d
+			x: -2.5000000000000004d
+			y: -3.0000000000000004d
 		}
 		{
 			dependencies: ["7B9322398541B4D7"]
@@ -109,8 +109,8 @@
 				item: "ars_nouveau:agronomic_sourcelink"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -4.0d
+			x: -3.000000000000001d
+			y: -4.499999999999998d
 		}
 		{
 			dependencies: ["7B9322398541B4D7"]
@@ -127,8 +127,8 @@
 				item: "ars_nouveau:volcanic_sourcelink"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -3.5d
+			x: -4.000000000000001d
+			y: -4.0d
 		}
 		{
 			dependencies: ["7B9322398541B4D7"]
@@ -150,8 +150,8 @@
 				item: "ars_nouveau:alchemical_sourcelink"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -2.5d
+			x: -4.499999999999998d
+			y: -3.0000000000000004d
 		}
 		{
 			dependencies: ["7B9322398541B4D7"]
@@ -167,8 +167,8 @@
 				item: "ars_nouveau:vitalic_sourcelink"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -1.5d
+			x: -4.000000000000001d
+			y: -2.0000000000000004d
 		}
 		{
 			dependencies: ["7B9322398541B4D7"]
@@ -184,22 +184,29 @@
 				item: "ars_nouveau:mycelial_sourcelink"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -1.0d
+			x: -3.000000000000001d
+			y: -1.5000000000000004d
 		}
 		{
 			dependencies: ["47125158A87108D9"]
+			description: ["The current price in the market makes it harder to obtain during your first days"]
 			id: "77ACD3309626DD52"
+			rewards: [{
+				id: "743AA6744FFF6378"
+				item: "farmersdelight:hamburger"
+				type: "item"
+			}]
 			shape: "diamond"
 			size: 1.5d
+			subtitle: "Everyone has one"
 			tasks: [{
 				id: "17CB1B8F7653B91E"
 				item: "ars_nouveau:novice_spell_book"
 				type: "item"
 			}]
 			title: "Novice Spell Slinger"
-			x: 0.75d
-			y: -3.0d
+			x: -0.75d
+			y: -4.0d
 		}
 		{
 			dependencies: [
@@ -207,23 +214,36 @@
 				"207A4039A43D3643"
 				"160702ED6F9A45B1"
 			]
+			description: ["Just jumping into the nether is no longer enough to get one, now some form of automatic (Botania) mana farm is necessary"]
 			icon: "ars_nouveau:apprentice_spell_book"
 			id: "140BAEE60B32FC65"
+			rewards: [{
+				id: "21CFF9C544B779A6"
+				item: "delightful:cheeseburger"
+				type: "item"
+			}]
 			shape: "diamond"
 			size: 1.5d
+			subtitle: "The culmination of many riches"
 			tasks: [{
 				id: "7BA8F52C6A05EDEC"
 				item: "ars_nouveau:apprentice_spell_book"
 				type: "item"
 			}]
 			title: "Apprentice Spell Slinger"
-			x: 0.75d
-			y: -5.25d
+			x: -0.75d
+			y: -6.249999999999998d
 		}
 		{
 			dependencies: ["140BAEE60B32FC65"]
+			description: ["Make a check list, you got enemies to slay"]
 			icon: "ars_nouveau:archmage_spell_book"
 			id: "28D293FDA8708D98"
+			rewards: [{
+				id: "244603A627F4052A"
+				item: "delightful:deluxe_cheeseburger"
+				type: "item"
+			}]
 			shape: "diamond"
 			size: 1.5d
 			subtitle: "Special Grade Sorcerer"
@@ -233,14 +253,11 @@
 				type: "item"
 			}]
 			title: "Veteran Spell Slinger"
-			x: 0.75d
-			y: -7.5d
+			x: -0.75d
+			y: -8.499999999999998d
 		}
 		{
-			dependencies: [
-				"340A36683404885B"
-				"77ACD3309626DD52"
-			]
+			dependencies: ["77ACD3309626DD52"]
 			id: "7251CC1380AD60FC"
 			subtitle: "It pulls items from nearby chests"
 			tasks: [{
@@ -249,7 +266,53 @@
 				type: "item"
 			}]
 			title: "More Glyphs"
-			x: 3.0d
+			x: -2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["77ACD3309626DD52"]
+			description: ["Cook a SourceBerry into a meal (like jam or jelly) for easy and fast mana regeneration"]
+			id: "11FD69750F393B8E"
+			subtitle: "Cooking for mage heads"
+			tasks: [{
+				id: "2E230D61D1871CA6"
+				item: "ars_nouveau:sourceberry_bush"
+				type: "item"
+			}]
+			title: "Easy Mana Regen"
+			x: 1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["340A36683404885B"]
+			description: [
+				" - \"Hello. How can I help you?\""
+				""
+				" - \"I just casted a few break spells and my Ars Nouveau Mana isn't going back, what is going on\""
+				""
+				" - \"Yes. This is because of the recent changes to Mana(tm) policies, it will no longer be provided passively and now requires the consumption of our new line of SourceBerry(tm) products.\""
+				""
+				" - \"What?! I never agreed on any change!!\""
+				""
+				" - \"It was in the modpack contract\""
+				""
+				" - \"UNBELIEVABLE! I am cancelling my contract and changing to Hex Casting!\""
+			]
+			icon: "drinkbeer:iron_call_bell"
+			id: "19BE08646592BED9"
+			rewards: [{
+				id: "5B52CAB1D3E1208B"
+				item: "arsdelight:source_berry_pie_slice"
+				type: "item"
+			}]
+			subtitle: "Call 123-123-&klorem&r-321 mage central association"
+			tasks: [{
+				id: "089AFD110BC5DA99"
+				title: "Call Mage Call Center"
+				type: "checkmark"
+			}]
+			title: "Help! My mana isn't going coming back"
+			x: 1.5d
 			y: -1.5d
 		}
 	]
