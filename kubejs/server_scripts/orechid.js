@@ -15,11 +15,6 @@ ServerEvents.recipes(event => {
     event.recipes.botania.orechid('malum:deepslate_quartz_ore', 'minecraft:deepslate', 80);
     event.recipes.botania.orechid_ignem("malum:cthonic_gold_ore", "minecraft:basalt", 1000)
 
-    event.recipes.botania.orechid('alexscaves:galena_iron_ore', 'alexscaves:galena', 10);
-    event.recipes.botania.orechid('alexscaves:radrock_uranium_ore', 'alexscaves:radrock', 10);
-    event.recipes.botania.orechid('alexscaves:guanostone_redstone_ore', 'alexscaves:guanostone', 10);
-    event.recipes.botania.orechid('alexscaves:coprolith_coal_ore', 'alexscaves:coprolith', 10);
-
     event.recipes.botania.orechid('aether:ambrosium_ore', 'aether:holystone', 1000);
     event.recipes.botania.orechid('aether:zanite_ore', 'aether:holystone', 1000);
     event.recipes.botania.orechid('aether:gravitite_ore', 'aether:holystone', 1000);

@@ -244,11 +244,10 @@
 		}
 		{
 			description: [
-				"You have a few options for creative flight:"
+				"You have a two options for creative flight:"
 				""
 				"1. Botania, wearing the flugel tiara"
 				"2. Hex Casting, casting the Anchorite's or Wayfairer's hex"
-				"3. Ars Nouveau, with the Tablet of Flight ritual"
 			]
 			icon: {
 				Count: 1
@@ -269,24 +268,13 @@
 		}
 		{
 			dependencies: ["2925025251C4B4EA"]
-			id: "5EF60AA1D1B94909"
-			tasks: [{
-				id: "0677FDE3918EB271"
-				item: "ars_nouveau:ritual_flight"
-				type: "item"
-			}]
-			x: 8.0d
-			y: 4.0d
-		}
-		{
-			dependencies: ["2925025251C4B4EA"]
 			id: "5849ABF511065716"
 			tasks: [{
 				id: "7B1675E1514FAD8E"
 				title: "Hex casting"
 				type: "checkmark"
 			}]
-			x: 6.0d
+			x: 7.5d
 			y: 4.0d
 		}
 		{
@@ -303,7 +291,7 @@
 				}
 				type: "item"
 			}]
-			x: 10.0d
+			x: 8.5d
 			y: 4.0d
 		}
 	]

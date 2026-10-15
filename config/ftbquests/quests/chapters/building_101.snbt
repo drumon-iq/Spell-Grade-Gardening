@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "building_101"
-	group: "25D270800AE94DEF"
+	group: ""
 	icon: "skinnedlanterns:tiny_potato_lantern_block"
 	id: "51F5C2A42317E708"
 	images: [{
@@ -13,7 +13,7 @@
 		x: 0.5d
 		y: 2.0d
 	}]
-	order_index: 0
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{

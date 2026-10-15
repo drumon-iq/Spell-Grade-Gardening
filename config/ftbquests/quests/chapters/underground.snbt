@@ -5,7 +5,7 @@
 	group: "669752626E353019"
 	icon: "undergarden:catalyst"
 	id: "27534A83A193306F"
-	order_index: 7
+	order_index: 6
 	quest_links: [ ]
 	quests: [{
 		id: "1BF5925192F52BFD"

@@ -2,7 +2,7 @@
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
 	filename: "guns"
-	group: "0D0512E4FC4DE7D9"
+	group: ""
 	icon: {
 		Count: 1
 		id: "jeg:semi_auto_pistol"
@@ -12,7 +12,7 @@
 		}
 	}
 	id: "77E5807F780BCEBA"
-	order_index: 0
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
@@ -23,7 +23,7 @@
 				type: "xp_levels"
 				xp_levels: 1
 			}]
-			subtitle: "No need for a fair fight"
+			subtitle: "I mean ... it's basically magic alright"
 			tasks: [{
 				id: "3E58017F685D68C1"
 				item: "jeg:scrap_workbench"
@@ -52,8 +52,8 @@
 				type: "checkmark"
 			}]
 			title: "Why are there no recipes for the workbenchs?"
-			x: -2.0d
-			y: 0.0d
+			x: 1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["4C0AB169636FB84E"]
@@ -414,6 +414,53 @@
 			x: 6.5d
 			y: -1.5d
 		}
+		{
+			id: "4882E7A3E18FE15A"
+			subtitle: "I SAID I CAST FIREBALL"
+			tasks: [{
+				id: "02EDE30326386E84"
+				item: "irons_spellbooks:inscription_table"
+				type: "item"
+			}]
+			title: "Start on Iron's Spells and Spellbooks"
+			x: -4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4882E7A3E18FE15A"]
+			id: "05C30EAF685047C5"
+			tasks: [{
+				id: "62480263C9CECBE3"
+				item: {
+					Count: 1
+					id: "irons_spellbooks:copper_spell_book"
+					tag: {
+						"irons_spellbooks:spell_container": {
+							data: [ ]
+							maxSpells: 5
+							mustEquip: 1b
+							spellWheel: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -6.5d
+			y: 0.0d
+		}
+		{
+			description: ["As you hold a gun, you are still able to cast Iron's Spells and Spellbooks spells, making it possible to combine both"]
+			id: "3FAFA22A45EA6351"
+			subtitle: "No need for a fair fight"
+			tasks: [{
+				id: "6CCE2C7CC2F61AB9"
+				title: "Bang and then Pling"
+				type: "checkmark"
+			}]
+			title: "Fighting as a wizard"
+			x: -2.0d
+			y: 0.0d
+		}
 	]
-	title: "Just Enough Guns"
+	title: "Fight as a Wizard"
 }

@@ -148,39 +148,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["45526045F2926948"]
-			description: [
-				"It is a versatile and potent mod, within the first day is easy to get through a good chunk of the mod, and the ability to spam spells makes tools useless, guns useless, other magic useless, it's just that strong."
-				""
-				"So I took that away, natural regen got nuked, if you want passive mana regen craft the rings, amulet and armor, even the enchantment (Mana Regen) does nothing."
-				""
-				"... Or ... drink potions."
-				""
-				"This is to make Ars Nouveau usage rather temporary and localized, a one time thing where you become semi-immortal with healing spells, dash, and a bullet hell of spell spamming."
-				""
-				"Later on, with EvilCraft, you can stop depending on potions."
-			]
-			icon: {
-				Count: 1
-				id: "ars_nouveau:wand"
-				tag: { }
-			}
-			id: "71DCA355BEC56E99"
-			rewards: [{
-				id: "2C9EC58868EA40FC"
-				type: "xp_levels"
-				xp_levels: 1
-			}]
-			subtitle: "Ars Nouveau got NERFED to hell"
-			tasks: [{
-				id: "3B92DBC9337A1205"
-				title: "Ars Nouveau is BUSTED"
-				type: "checkmark"
-			}]
-			x: 2.5d
-			y: 1.5d
-		}
-		{
 			description: [
 				"There are many things to improve."
 				""
@@ -200,7 +167,8 @@
 				title: "Version is [prototype]"
 				type: "checkmark"
 			}]
-			x: -4.0d
+			title: "Version is Alpha"
+			x: -4.5d
 			y: -0.5d
 		}
 		{
@@ -315,7 +283,7 @@
 		}
 		{
 			dependencies: ["78CACD6FA759DBB1"]
-			description: ["You might have some trouble find an amethyst geode in the vanilla way, fret not, Ars Nouveau is here to help, craft an dowsing rod and use it, it will show the location of budding amethyst blocks like an x-ray"]
+			description: ["Finding geodes can be hard and annoying, looking for them in caves and in the ocean can be easier as they will be exposed"]
 			icon: "minecraft:amethyst_shard"
 			id: "1DFF40B148B10254"
 			rewards: [{
@@ -325,26 +293,12 @@
 				type: "choice"
 			}]
 			subtitle: "Find a amethyst geode and gather some charged amethyst"
-			tasks: [
-				{
-					consume_items: true
-					id: "468ED0EDB7A649B0"
-					item: "hexcasting:charged_amethyst"
-					type: "item"
-				}
-				{
-					id: "438FEADCF7CCD49D"
-					item: {
-						Count: 1
-						id: "ars_nouveau:dowsing_rod"
-						tag: {
-							Damage: 0
-						}
-					}
-					optional_task: true
-					type: "item"
-				}
-			]
+			tasks: [{
+				consume_items: true
+				id: "468ED0EDB7A649B0"
+				item: "hexcasting:charged_amethyst"
+				type: "item"
+			}]
 			title: "Starting Hex Casting"
 			x: 5.5d
 			y: 1.0d
@@ -393,27 +347,6 @@
 			y: 1.0d
 		}
 		{
-			dependencies: [
-				"73D5E821D1996037"
-				"6F70F6BB9354D877"
-			]
-			icon: "ars_nouveau:novice_spell_book"
-			id: "723C1829B2AF657B"
-			rewards: [{
-				id: "53159502469E8F0D"
-				item: "ars_nouveau:worn_notebook"
-				type: "item"
-			}]
-			tasks: [{
-				id: "26D881FD51D096A6"
-				item: "ars_nouveau:imbuement_chamber"
-				type: "item"
-			}]
-			title: "Starting Ars Nouveau"
-			x: 6.5d
-			y: -3.5d
-		}
-		{
 			dependencies: ["45526045F2926948"]
 			description: ["Global gamerules is being used to turn off mob griefing and fire tick"]
 			icon: "minecraft:tnt"
@@ -424,8 +357,8 @@
 				type: "checkmark"
 			}]
 			title: "Mob Griefing is off"
-			x: -2.0d
-			y: -0.5d
+			x: 2.5d
+			y: 1.5d
 		}
 	]
 	title: "Welcome"
